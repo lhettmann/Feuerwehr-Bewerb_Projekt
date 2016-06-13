@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+        <CheckBoxPreference android:key="sort_kuppeln"
+            android:title="Kuppeln"
+            android:defaultValue="true"
+            android:summary="Sollen Zeiten von Tätigkeit Kuppeln angezeigt werden"/>
+    <CheckBoxPreference android:key="sort_gesamtTrocken"
+        android:title="Gesamt Trocken"
+        android:defaultValue="true"
+        android:summary="Sollen Zeiten von Tätigkeit Gesamt Trocken angezeigt werden"/>
+    <CheckBoxPreference android:key="sort_gesamtNass"
+        android:title="Gesamt Nass"
+        android:defaultValue="true"
+        android:summary="Sollen Zeiten von Tätigkeit Gesamt Nass angezeigt werden"/>
+    <CheckBoxPreference android:key="sort_bronze"
+        android:title="Bronze"
+        android:defaultValue="true"
+        android:summary="Sollen Zeiten von Aufstellung Bronze angezeigt werden"/>
+    <CheckBoxPreference android:key="sort_silber"
+        android:title="Silber"
+        android:defaultValue="true"
+        android:summary="Sollen Zeiten von Aufstellung Silber angezeigt werden"/>
+
+    <ListPreference android:key="sort_order"
+        android:title="Sortieren nach"
+        android:entries="@array/order"
+        android:entryValues="@array/order"
+        android:summary="So wird sotiert"/>
+
+</PreferenceScreen>

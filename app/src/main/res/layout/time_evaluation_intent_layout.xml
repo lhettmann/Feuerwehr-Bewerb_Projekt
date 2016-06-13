@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner_evaluation_aufstellung" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Bronze:"
+        android:id="@+id/textView8"
+        android:layout_below="@+id/spinner_evaluation_aufstellung"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Beste Zeit:"
+        android:id="@+id/textView9"
+        android:layout_below="@+id/textView8"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Durchschnittszeit:"
+        android:id="@+id/textView10"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/textView9"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="bz_bronze"
+        android:id="@+id/textView_evaluation_bronze_besteZeit"
+        android:layout_above="@+id/textView10"
+        android:layout_toRightOf="@+id/textView9"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="right"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="avgz_bronze"
+        android:id="@+id/textView_evaluation_bronze_avgZeit"
+        android:layout_alignTop="@+id/textView10"
+        android:layout_toRightOf="@+id/textView10"
+        android:layout_alignRight="@+id/textView_evaluation_bronze_besteZeit"
+        android:layout_alignEnd="@+id/textView_evaluation_bronze_besteZeit"
+        android:gravity="right"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Schlechteste Zeit:"
+        android:id="@+id/textView12"
+        android:layout_below="@+id/textView10"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="sz_bronze"
+        android:id="@+id/textView_evaluation_bronze_schlechtesteZeit"
+        android:layout_below="@+id/textView10"
+        android:layout_alignRight="@+id/textView_evaluation_bronze_avgZeit"
+        android:layout_alignEnd="@+id/textView_evaluation_bronze_avgZeit"
+        android:layout_toRightOf="@+id/textView12"
+        android:layout_toEndOf="@+id/textView12"
+        android:gravity="right"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Silber:"
+        android:id="@+id/textView11"
+        android:layout_below="@+id/textView12"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="32dp"
+        android:layout_alignRight="@+id/textView_evaluation_bronze_schlechtesteZeit"
+        android:layout_alignEnd="@+id/textView_evaluation_bronze_schlechtesteZeit" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Beste Zeit:"
+        android:id="@+id/textView13"
+        android:layout_below="@+id/textView11"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Durchschnittszeit:"
+        android:id="@+id/textView14"
+        android:layout_below="@+id/textView13"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Schlechteste Zeit:"
+        android:id="@+id/textView15"
+        android:layout_below="@+id/textView14"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="bz_silber"
+        android:id="@+id/textView_evaluation_silber_besteZeit"
+        android:layout_above="@+id/textView14"
+        android:layout_toRightOf="@+id/textView13"
+        android:layout_alignRight="@+id/textView_evaluation_bronze_schlechtesteZeit"
+        android:layout_alignEnd="@+id/textView_evaluation_bronze_schlechtesteZeit"
+        android:gravity="right"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="avgz_silber"
+        android:id="@+id/textView_evaluation_silber_avgZeit"
+        android:layout_below="@+id/textView_evaluation_silber_besteZeit"
+        android:layout_toRightOf="@+id/textView14"
+        android:layout_alignRight="@+id/textView_evaluation_silber_besteZeit"
+        android:layout_alignEnd="@+id/textView_evaluation_silber_besteZeit"
+        android:gravity="right"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="sz_silber"
+        android:id="@+id/textView_evaluation_silber_schlechtesteZeit"
+        android:layout_below="@+id/textView14"
+        android:layout_toRightOf="@+id/textView15"
+        android:layout_alignRight="@+id/textView_evaluation_silber_avgZeit"
+        android:layout_alignEnd="@+id/textView_evaluation_silber_avgZeit"
+        android:gravity="right"/>
+</RelativeLayout>

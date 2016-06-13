@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/deleteAllTimes"
+        android:title="Alle Zeiten löschen"/>
+    <item android:id="@+id/sortiereinstellungen"
+        android:title="Sortiereinstellungen"/>
+    <item android:id="@+id/sort"
+        android:title="Zeiten sortieren"/>
+    <item android:id="@+id/zeitauswertung"
+        android:title="Zeitauswertung" />
+    <item android:id="@+id/ziehung"
+        android:title="Zieheinstellungen"/>
+</menu>
